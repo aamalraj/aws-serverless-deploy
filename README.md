@@ -8,3 +8,7 @@ Infrastructure for the whole sample deployment is available as an AWS Cloudforma
 
 
 ![image](https://github.com/aamalraj/aws-serverless-deploy/assets/44780732/52021d75-479d-4f98-913f-747196e4bc71)
+
+CloudFormation Template:
+
+![image](https://github.com/aamalraj/aws-serverless-deploy/assets/44780732/c9a30597-3453-4dec-9a1c-71297dfa6561)
