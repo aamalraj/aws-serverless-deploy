@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "7efd71ce-0be4-4b16-84cb-004a89345e01",
+		"name": "UserVotesApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7157350"
+	},
+	"item": [
+		{
+			"name": "Record User Votes",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientId",
+							"value": "3at5lo2utnepo7ea1cf2r1qgp1",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "Authorization",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "scope",
+							"value": "email",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://fantasygameinc.auth.us-east-1.amazoncognito.com/login",
+							"type": "string"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "client_authentication",
+							"value": "body",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "https://example.com/callback/",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "implicit",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "Ans:fantasy1",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://fantasygameinc.auth.us-east-1.amazoncognito.com/login?client_id=5057kgj1fhn74tfbl6ckh3klg9&response_type=token&scope=email+openid+phone&redirect_uri=https%3A%2F%2Fexample.com%2Fcallback%2F",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": \"ppeppin\",\r\n    \"votingUniqueId\": \"e56ed03d-1652-487f-bc2d-57d3af2ff5e5\",\r\n    \"votingMessage\": {\r\n        \"myTeam\": {\r\n            \"QB\": \"Malik Cunningham\",\r\n            \"RB\": [\r\n                \"Chuba Hubbard\",\r\n                \"D'Onta Foreman\"\r\n            ],\r\n            \"WR\": [\r\n                \"Kendrick Bourne\",\r\n                \"Brandon Powell\"\r\n            ],\r\n            \"TE\": \"Logan Thomas\",\r\n            \"KR\": \"Zach Ertz\",\r\n            \"DST\": \"M. Alie-Cox\",\r\n            \"FLEX\": \"Taysom Hill\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://r2gplor1b8.execute-api.us-east-1.amazonaws.com/prod/v1/uservotes",
+					"protocol": "https",
+					"host": [
+						"r2gplor1b8",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"v1",
+						"uservotes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
